@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from './components/NavBar';
 import CakeContainer from './components/CakeContainer';
+import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import './index.css';
 
@@ -18,6 +19,10 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/cakes" element={<CakeContainer />} exact/>
         </Routes>
+
+        <div className='footer'>
+          <Footer />
+        </div>
       </div>
     </Router>
   
