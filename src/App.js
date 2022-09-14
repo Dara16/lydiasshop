@@ -5,6 +5,7 @@ import CakeContainer from './components/CakeContainer';
 import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import './index.css';
+import About from './components/About';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/cakes" element={<CakeContainer />} exact/>
+          <Route path="/about" element={<About />} exact/>
         </Routes>
 
         <div className='footer'>
